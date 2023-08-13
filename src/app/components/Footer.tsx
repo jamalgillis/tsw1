@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
-    <div className="flex flex-row justify-start items-center relative">
+    <section className="flex flex-row justify-start items-center relative">
       <div>
-        <img src="" alt="" />
+        <Image src="" alt="filler image" />
       </div>
       <div className="w-1 h-full bg-zinc-50"></div>
       <p className="">
@@ -14,6 +16,6 @@ export default function Footer() {
           Lighthouse streaming
         </a>
       </p>
-    </div>
+    </section>
   );
 }

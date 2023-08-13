@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Nav() {
@@ -5,7 +6,7 @@ export default function Nav() {
     <div className="flex flex-row justify-between relative z-20">
       <Link href="/">
         <div>
-          <img src="" alt="" />
+          <Image src="" alt="" />
         </div>
         <p className="uppercase font-light text-2xl">
           texas
