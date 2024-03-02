@@ -1,0 +1,91 @@
+---
+import { Image } from "astro:assets";
+// import mainLogo from "../assets/tswLogo.png";
+import BgImage from "../assets/TSW BG.jpg";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <section class="relative w-screen h-screen">
+      <div class="p-5">
+        <div class="mx-auto">
+          <!-- NAV BAR -->
+          <div
+            class="flex flex-row justify-between relative z-20 text-slate-100"
+          >
+            <a href="/">
+              <div>
+                <!-- <Image src={mainLogo} alt="Texas Southwest First" /> -->
+              </div>
+              <p class="uppercase font-light text-2xl">
+                texas
+                <span class="font-bold">southwest</span>
+                first
+              </p>
+            </a>
+            {
+              /* <div>
+							<p className="uppercase">menu</p>
+						</div> */
+            }
+          </div>
+        </div>
+      </div>
+      <!-- main body area -->
+      <div class="relative z-20 w-full h-full grid grid-cols-1">
+        <div
+          class="flex flex-col items-center justify-center gap-4 text-slate-50"
+        >
+          <h2 class="capitalize text-3xl text-center">
+            Welcome to Texas Southwest First
+            <br />
+            Ecclesiastical Jurisdiction
+          </h2>
+          <a
+            class="text-slate-50 px-6 py-3 uppercase border-4 rounded-sm border-zinc-50 text-xl font-bold hover:bg-yellow-500 hover:border-yellow-500 transition-colors"
+            href="/watch"
+          >
+            watch
+          </a>
+        </div>
+      </div>
+      <!-- BG VIDEO AREA -->
+      <div class="absolute top-0 bottom-0 left-0 right-0 z-0">
+        <div class="bg-slate-800 w-full h-full object-cover overflow-hidden">
+          <Image src={BgImage} alt="" />
+        </div>``
+      </div>
+      <div
+        class="absolute top-0 bottom-0 left-0 right-0 z-10 bg-opacity-60 bg-purple-700"
+      >
+      </div>
+    </section>
+    <div class="p-5 bg-purple-700">
+      <div class="mx-auto">
+        <!-- Footer area -->
+        <section class="flex flex-row justify-start items-center relative">
+          <div>
+            <!-- <Image src={mainLogo} alt="filler image" /> -->
+          </div>
+          <div class="w-1 h-full bg-zinc-50"></div>
+          <p class="">
+            Site Designed by
+            <a
+              class="capitalize pl-1 cursor-pointer underline"
+              href="http://www.lighthousestreaming.com"
+            >
+              Lighthouse streaming
+            </a>
+          </p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

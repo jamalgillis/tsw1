@@ -1,0 +1,75 @@
+---
+import { Image } from "astro:assets";
+// import mainLogo from "../assets/tswLogo.png";
+import BgImage from "../assets/TSW BG.jpg";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Watch</title>
+  </head>
+  <body>
+    <section class="relative w-screen h-screen bg-purple-700">
+      <div class="p-5">
+        <div class="mx-auto">
+          <!-- NAV BAR -->
+          <div
+            class="flex flex-row justify-between relative z-20 text-slate-100"
+          >
+            <a href="/">
+              <div>
+                <!-- <Image src={mainLogo} alt="Texas Southwest First" /> -->
+              </div>
+              <p class="uppercase font-light text-2xl">
+                texas
+                <span class="font-bold">southwest</span>
+                first
+              </p>
+            </a>
+            {
+              /* <div>
+							<p className="uppercase">menu</p>
+						</div> */
+            }
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <iframe
+          src="https://c.themediacdn.com/embed/media/Wds3gq/iHcrqDlsARM/iGTbdQsWilO_5"
+          width="590"
+          height="431"
+          frameborder="0"
+          scrolling="no"
+          allow="autoplay"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+      <style>
+        .video-container {
+          position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 30px;
+          height: 0;
+          overflow: hidden;
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <div class="aspect-video"></div>
+    </section>
+  </body>
+</html>
